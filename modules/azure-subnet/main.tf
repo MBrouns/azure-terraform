@@ -9,7 +9,7 @@ resource azurerm_subnet main {
 
 
 resource azurerm_network_security_group sg_subnet {
-  name                = "sg-web-${var.name}"
+  name                = "sg-${var.name}"
 
   location            = var.location
   resource_group_name = var.azurerm_resource_group_name
